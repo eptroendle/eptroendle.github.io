@@ -3,8 +3,6 @@ body {
     background-color: #f5e3d7;
     margin: 0;
     padding: 0;
-
-
 }
 
 .content-wrapper {
@@ -148,6 +146,9 @@ footer {
     padding: 20px;
     text-align: center;
     font-family: 'Garamond', serif; /* Choose a suitable medieval font */
+    position: absolute;
+    bottom: 0; /* Position the footer at the bottom of the page */
+    width: 100%; /* Make the footer span the entire width */
 }
 
 footer p {
@@ -164,6 +165,7 @@ footer p::before {
 
 footer p::after {
     content: "|"; /* Separator */
+    font-size: 1.2em;
     margin-left: 10px;
     margin-right: 10px;
 }
