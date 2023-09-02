@@ -3,6 +3,14 @@ body {
     background-color: #f5e3d7;
     margin: 0;
     padding: 0;
+
+    /* Set the background image to your SVG file */
+    background-image: url('background.svg');
+    /* Ensure the SVG retains its aspect ratio */
+    background-size: contain;
+    /* Set other background properties as needed */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Keep the background fixed */
 }
 
 header {
