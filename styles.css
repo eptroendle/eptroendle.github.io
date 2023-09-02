@@ -16,6 +16,16 @@ body {
     padding: 20px; /* Add padding as needed */
 }
 
+.content-wrapper::before {
+    content: ""; /* Required for pseudo-element */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+    position: absolute; /* Position the overlay */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 header {
     background-color: #8b4513;
     color: #fff;
