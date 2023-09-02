@@ -5,25 +5,11 @@ body {
     padding: 0;
 }
 
-.content-wrapper {
-    background-image: url('background.svg'); /* Replace with your background image URL */
-    background-size: cover; /* Scale the background image to cover the entire element */
-    background-repeat: no-repeat; /* Prevent background image from repeating */
-    background-position: center center; /* Center the background image */
-    min-height: 100vh; /* Ensure the wrapper takes at least the full viewport height */
-    padding: 20px; /* Add padding as needed */
-    position: relative; /* Add relative positioning */
-    z-index: 1; /* Set z-index to be above header */
-}
-
-.content-wrapper::before {
-    content: ""; /* Required for pseudo-element */
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
-    position: absolute; /* Position the overlay */
+#header-placeholder {
+    position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    right: 0;
 }
 
 header {
@@ -108,6 +94,28 @@ nav ul li.dropdown {
     display: block;
 }
 
+.content-wrapper {
+    background-image: url('background.svg'); /* Replace with your background image URL */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center center; /* Center the background image */
+    min-height: 100vh; /* Ensure the wrapper takes at least the full viewport height */
+    padding: 20px; /* Add padding as needed */
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Set z-index to be above header */
+    top: 148 px;
+}
+
+.content-wrapper::before {
+    content: ""; /* Required for pseudo-element */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+    position: absolute; /* Position the overlay */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 p {
     font-size: 1.2em;
     margin: 0;
@@ -140,6 +148,13 @@ li::before {
 
 .education-item {
     margin-bottom: 20px;
+}
+
+#footer-placeholder {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 footer {
