@@ -102,7 +102,6 @@ nav ul li.dropdown {
     min-height: 100vh; /* Ensure the wrapper takes at least the full viewport height */
     padding: 20px; /* Add padding as needed */
     position: relative; /* Add relative positioning */
-    z-index: 1; /* Set z-index to be above header */
     top: 148 px;
 }
 
