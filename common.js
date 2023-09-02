@@ -9,11 +9,12 @@ fetch('header.html')
 fetch('footer.html')
     .then(response => response.text())
     .then(data => {
+        // Set the footer content
         document.getElementById('footer-placeholder').innerHTML = data;
+
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Update the current year in the footer
+        document.getElementById('current-year').textContent = currentYear;
     });
-
-// Get the current year
-const currentYear = new Date().getFullYear();
-
-// Update the current year in the footer
-document.getElementById('current-year').textContent = currentYear;
