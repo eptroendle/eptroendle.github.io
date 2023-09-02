@@ -4,14 +4,16 @@ body {
     margin: 0;
     padding: 0;
 
-    /* Set the background image to your SVG file */
-    background-image: url('background.svg');
-    /* Ensure the SVG retains its aspect ratio */
-    background-size: contain;
-    /* Set other background properties as needed */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    background-attachment: fixed; /* Keep the background fixed */
-    background-position: center bottom; /* Center vertically and align with the bottom of the page */
+
+}
+
+.content-wrapper {
+    background-image: url('background.svg'); /* Replace with your background image URL */
+    background-size: cover; /* Scale the background image to cover the entire element */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center center; /* Center the background image */
+    min-height: 100vh; /* Ensure the wrapper takes at least the full viewport height */
+    padding: 20px; /* Add padding as needed */
 }
 
 header {
