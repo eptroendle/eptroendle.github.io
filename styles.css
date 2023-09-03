@@ -4,8 +4,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
- #header-placeholder {}
  
 header {
     background-color: #8b4513;
@@ -96,7 +94,7 @@ nav ul li.dropdown {
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-position: center center; /* Center the background image */
     min-height: calc(100vh - 160px);
-    top : 160px /* later make this update in js based on the dynamic height of the header. */
+    top : 160px; /* later make this update in js based on the dynamic height of the header. */
     padding : 20px; /* Add padding as needed */
     position : relative; /* Add relative positioning */
 }
@@ -152,8 +150,6 @@ li::before {
     padding: 20px; /* Add padding as needed */
     background-color: #f5e3d7; /* Background color */
 }
-
-#footer-placeholder {}
 
 footer {
     background-color: #4B0082; /* Dark purple background */
