@@ -94,10 +94,9 @@ nav ul li.dropdown {
     background-size: cover; /* Scale the background image to cover the entire element */
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-position: center center; /* Center the background image */
-    min-height: 100vh; /* Ensure the wrapper takes at least the full viewport height */
+    min-height: calc(100vh - 120px);
     padding: 20px; /* Add padding as needed */
     position: relative; /* Add relative positioning */
-    bottom: 148 px;
 }
 
 .content-wrapper::before {
@@ -144,12 +143,7 @@ li::before {
     margin-bottom: 20px;
 }
 
-#footer-placeholder {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+#footer-placeholder {}
 
 footer {
     background-color: #4B0082; /* Dark purple background */
@@ -157,8 +151,8 @@ footer {
     padding: 20px;
     text-align: center;
     font-family: 'Garamond', serif; /* Choose a suitable medieval font */
-    position: absolute;
-    bottom: 0; /* Position the footer at the bottom of the page */
+    position: relative; /* Add relative positioning */
+    margin-top: auto; /* Push the footer to the bottom */
     width: 100%; /* Make the footer span the entire width */
 }
 
