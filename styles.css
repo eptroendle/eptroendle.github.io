@@ -122,10 +122,34 @@ section {
     border-radius: 10px;
 }
 
-.welcome {
+.video-section {
+  display: flex; /* Use flexbox to arrange elements side by side */
+  align-items: center; /* Vertically center the elements */
+}
+
+.video-container {
+  flex: 1; /* Allow the video container to expand and take up available space */
+  margin-right: 20px; /* Add margin for spacing */
+}
+
+.text-container {
+  flex: 1; /* Allow the text container to expand and take up available space */
+}
+
+/* Adjust the styling of the text content as needed */
+.text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 16px;
+}
+
+#welcome {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(255,255,255,0.25);
+    background-color: rgba(255, 255, 255, 0.25);
     border: 2px solid #8b4513;
     border-radius: 10px;
 }
