@@ -145,6 +145,14 @@ li::before {
     margin-bottom: 20px;
 }
 
+#notebook-container {
+    width: 100%; /* Make it span the full width */
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding as needed */
+    background-color: #f5e3d7; /* Background color */
+}
+
 #footer-placeholder {}
 
 footer {
