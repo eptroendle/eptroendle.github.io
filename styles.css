@@ -92,9 +92,9 @@ nav ul li.dropdown {
     background-image: url('background.svg'); /* Replace with your background image URL */
     background-size: cover; /* Scale the background image to cover the entire element */
     background-repeat: no-repeat; /* Prevent background image from repeating */
-    background-position: center center; /* Center the background image */
-    min-height: calc(100vh - 160px);
-    top : 160px; /* later make this update in js based on the dynamic height of the header. */
+    background-position: center bottom; /* Center the background image */
+    min-height: calc(100vh - 130px);
+    top : 130px; /* later make this update in js based on the dynamic height of the header. */
     padding : 20px; /* Add padding as needed */
     position : relative; /* Add relative positioning */
 }
