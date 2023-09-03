@@ -1,4 +1,4 @@
-const loadPyodide = async () => {
+const loadPyodideAndStartNotebook = async () => {
     // Load Pyodide
     const pyodide = await loadPyodide({
         indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.18.0/full/',
@@ -7,10 +7,10 @@ const loadPyodide = async () => {
     // Load additional packages if needed
     await pyodide.loadPackage(['numpy', 'pandas']);
 
-    // Initialize Jupyter Notebook for Pyodide
+    // Create the notebook after pyodide is loaded
     const notebook = new JupyterNotebookPyodide({
         pyodide,
-        appendTo: document.body, // Append the notebook to the body of your HTML page
+        appendTo: document.getElementById('notebook-container'), // Use the container div
     });
 
     // Start the notebook
@@ -21,9 +21,4 @@ const loadPyodide = async () => {
 };
 
 // Call the function to load Pyodide and start the notebook
-loadPyodide();
-
-const notebook = new JupyterNotebookPyodide({
-    pyodide,
-    appendTo: document.getElementById('notebook-container'), // Use the container div
-});
+loadPyodideAndStartNotebook();
