@@ -93,21 +93,21 @@ nav ul li.dropdown {
     background-size: cover; /* Scale the background image to cover the entire element */
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-position: center bottom; /* Center the background image */
-    min-height: calc(100vh - 80px);
-    top : 80px; /* later make this update in js based on the dynamic height of the header. */
+    min-height: 100vh; /*calc(100vh - 80px);*/
+    margin-top: auto; /* later make this update in js based on the dynamic height of the header. */
     padding : 20px; /* Add padding as needed */
     position : relative; /* Add relative positioning */
 }
 
-.content-wrapper::before {
-    content: ""; /* Required for pseudo-element */
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
-    position: absolute; /* Position the overlay */
+/*.content-wrapper::before {
+    content: ""; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
+}*/
 
 p {
     font-size: 1.2em;
@@ -120,7 +120,6 @@ section {
     background-color: #fff;
     border: 2px solid #8b4513;
     border-radius: 10px;
-    z-index: 1;
 }
 
 h2 {
