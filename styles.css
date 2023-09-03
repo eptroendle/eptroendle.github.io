@@ -93,8 +93,8 @@ nav ul li.dropdown {
     background-size: cover; /* Scale the background image to cover the entire element */
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-position: center bottom; /* Center the background image */
-    min-height: calc(100vh - 130px);
-    top : 130px; /* later make this update in js based on the dynamic height of the header. */
+    min-height: calc(100vh - 80px);
+    top : 80px; /* later make this update in js based on the dynamic height of the header. */
     padding : 20px; /* Add padding as needed */
     position : relative; /* Add relative positioning */
 }
@@ -120,7 +120,7 @@ section {
     background-color: #fff;
     border: 2px solid #8b4513;
     border-radius: 10px;
-}
+    z-index: 1;
 
 h2 {
     font-size: 1.5em;
