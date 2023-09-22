@@ -146,6 +146,34 @@ section {
   font-size: 16px;
 }
 
+/* Style for two-column layout */
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style for text column */
+.text-column {
+    flex-basis: calc(70% - 10px); /* Adjust the width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Style for image column */
+.image-column {
+    flex-basis: calc(30% - 10px); /* Adjust the width as needed */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Style for images */
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .code-block {
     border: 1px solid #ccc;
     background-color: #f9f9f9;
